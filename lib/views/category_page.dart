@@ -41,27 +41,17 @@ class _CategoryPageState extends State<CategoryPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  if (bannerImage != null)
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 20),
-                      height: 150,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
-                          image: NetworkImage(bannerImage),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
                   Expanded(
                     child: MasonryGridView.count(
                       // Using MasonryGridView as the alternative
-                      crossAxisCount: 2,
+                      crossAxisCount: 1,
                       itemCount: categories.length,
                       itemBuilder: (context, index) {
                         final category = categories[index];
-                        return CategoryCard(category: category);
+                        return CategoryCard(
+                          category: category,
+                          image: bannerImage!,
+                        );
                       },
                       mainAxisSpacing: 10.0,
                       crossAxisSpacing: 10.0,

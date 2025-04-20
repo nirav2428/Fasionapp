@@ -99,7 +99,7 @@
     },
     {
       "name": "carousel_slider",
-      "rootUri": "file:///C:/Users/nsp34/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-4.2.1",
+      "rootUri": "file:///C:/Users/nsp34/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-5.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -644,7 +644,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-04-19T09:32:27.106634Z",
+  "generated": "2025-04-20T09:12:28.252796Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///C:/scr/flutter",
